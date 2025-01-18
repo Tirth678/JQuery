@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Tutorial</title>
+</head>
+<body>
+    this is my body
+    <!-- CDN: Content delievery network -->
+     <p id="second">
+        This is a sample paragraph
+     </p>
+     <p class="third">
+        This is another paragraph
+     </p>
+     <p>
+        This is one another paragraph
+     </p>
+</body>
+<script src="/JQuery/jquery-3.7.1.js"></script>
+<script src="./jquery.js"></script>
+<script>
+    console.log($);
+    // $('selector').function(action)
+    // $('p').click(); // click on p
+    $('p').click(function(){
+        console.log("Hey! you click on p\n");
+    });
+    // $('p').hide();
+    $(this).hide(); // jis particular element pe click kroge wo hide ho jayega
+    $('#id').hide(); // to select an id
+    $('.class').hide(); // to select an class
+    // there are 3 main types of selectors on jQuery
+    // element,class,id
+    // element selector:
+    // $('p').click(function(){
+    //     console.log("Hey! you click on p\n");
+    // }); clicks on 'p' all element selectors
+
+    // id selector
+    // $('#second').click(function(){
+    //     console.log("You clicked on p with an id of second!\n");
+    // })
+
+    // class selector
+    $('.third').click(function(){
+        console.log("You click on paragraph with class of third\n");
+    })
+    
+    // other selectors
+    // $('*').click(); clicks on all elements
+    // $(p.odd).click(); jiski class odd hogi uspe click kro
+</script>
+</html>
