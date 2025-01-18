@@ -40,7 +40,15 @@ console.log($);
        $('p').hover(function(){
         console.log("You have hovered on this paragraph\n");
        })
-       
+
+       // demoing the on method
+       $('p').on(
+        {
+            click: function(){
+                console.log("Hey! thanks for clicking here!\n", this);
+            },
+        }
+       )
 
     });
     
