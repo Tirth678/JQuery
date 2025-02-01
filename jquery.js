@@ -42,6 +42,7 @@ console.log($);
        })
 
        // demoing the on method
+       // jaise click kroge to ye console me log hoga
        $('p').on(
         {
             click: function(){
