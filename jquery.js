@@ -52,8 +52,25 @@ console.log($);
        )
 
     });
-    
-    // other selectors
+    $('#btn').click(function(){
+        console.log("You clicked on the button\n");
+        $('#para').fadeOut(1000);
+        // fadeOut
+        // fadeOut() is used to fade out the element
+        // fadeIn()
+        // fadeToggle()
+        // fadeTo()
+        $('#para').slideUp(1000);
+        // slideUp() is used to slide up the element
+        // slideDown()
+        // slideToggle()
+        // slideTo()
+        $('#para').slideDown(1000);
+        // slideTo() is used to slide to the element
+
+    })
+        // other selectors
     // $('*').click(); clicks on all elements
     // $(p.odd).click(); jiski class odd hogi uspe click kro
+
 
